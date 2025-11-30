@@ -14,29 +14,37 @@ body {
     width: 100%;
     max-width: 400px;
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Input field for tasks */
+/* Heading */
+#todo-app h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input field */
 #task-input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
-/* Add Task button */
+/* Add task button */
 #add-task-btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
@@ -50,33 +58,38 @@ body {
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 15px;
 }
 
-/* Individual task items */
+/* Individual task item */
 li {
     background-color: #eeeeee;
     margin-top: 8px;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 12px 10px;
+    border-radius: 6px;
     display: flex;
-    justify-content: space-between; /* Keep task text and button apart */
+    justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    transition: background-color 0.2s ease;
 }
 
-/* Remove button styling */
+li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Remove button */
 .remove-btn {
     cursor: pointer;
     background-color: #ff6347;
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .remove-btn:hover {
     background-color: #d9534f;
 }
+/* Responsive design */

@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List Application</title>
+    <title>Persistent To-Do List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="todo-app">
         <h1>My To-Do List</h1>
-        <!-- Input field for new tasks -->
+        <!-- Input for new tasks -->
         <input type="text" id="task-input" placeholder="Enter a new task">
-        <!-- Button to add a task -->
+        <!-- Button to add task -->
         <button id="add-task-btn">Add Task</button>
         <!-- Task list -->
         <ul id="task-list">
-            <!-- Tasks will be dynamically added here -->
+            <!-- Tasks will be dynamically loaded here from Local Storage -->
         </ul>
     </div>
-    <!-- Link to JavaScript file -->
+    
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>

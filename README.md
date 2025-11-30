@@ -29,3 +29,29 @@ Attach Event Listeners:
 Add an event listener to addButton that calls addTask when the button is clicked.
 Add an event listener to taskInput for the 'keypress' event to allow tasks to be added by pressing the “Enter” key. Inside this event listener, check if event.key is equal to 'Enter' before calling addTask.
 Invoke the addTask function on DOMContentLoaded. - Outside addTask, add an event listener to document for the DOMContentLoaded event. Set the callback function to invoke addTask. This ensures your data fetching logic runs once the HTML document has fully loaded.
+
+# Persistent To-Do List Application
+
+## Overview
+This is a simple To-Do List web application that allows users to add, display, and remove tasks. The application is enhanced with **Local Storage** functionality, ensuring that tasks persist across browser sessions.
+
+## Features
+- Add tasks to the list.
+- Remove tasks individually.
+- Tasks are saved to Local Storage, so they remain even after refreshing or closing the browser.
+- Pressing **Enter** in the input field also adds the task.
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- Local Storage API
+
+## Usage
+1. Open `index.html` in your browser.
+2. Enter a task in the input field.
+3. Click the **Add Task** button or press **Enter**.
+4. View tasks in the list below the input field.
+5. Remove tasks by clicking the **Remove** button next to each task.
+
+## Project Structure
